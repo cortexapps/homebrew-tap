@@ -3,7 +3,7 @@ class CortexappsCli < Formula
   desc     "Command-line Interface for Cortexapps"
   homepage "https://github.com/cortexapps/cli"
   url "https://files.pythonhosted.org/packages/4c/98/80bc00400ee4d2e34f62859261ece50634dbf18f01df176e52f8c7ca1e0c/cortexapps_cli-0.21.0.tar.gz"
-  sha256  "1207ab827fc1b6dd41b3715df660b349ee35569d1d3aed5a7ebf9a18a3818d1c:
+  sha256  "1207ab827fc1b6dd41b3715df660b349ee35569d1d3aed5a7ebf9a18a3818d1c"
   license "MIT"
 
   depends_on "python@3.11"
