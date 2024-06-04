@@ -44,10 +44,20 @@ class CortexappsCli < Formula
 
   def caveats
     <<~EOS
-      Add the following line to your ~/.bash_profile
-      export PATH="#{bin}:$PATH"
+      To make the CLI available in your SYSTEM path, run this command to add the path to your shell's profile.
+
+      Not sure what shell you are using?  Run this command:
+      echo $SHELL
+
+      Bash:
+      export PATH="#{bin}:$PATH" >> ~/.bash_profile
+
+      zsh:
+      export PATH="#{bin}:$PATH" >> ~/.zprofile
 
       Restart your terminal for the settings to take effect.
+
+      Run 'cortex -v' to verify.
     EOS
   end
 
