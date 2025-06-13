@@ -39,6 +39,10 @@ class CortexappsCli < Formula
   end
 
   def install
+     # Fix for this error encountered during install
+     # ValueError: ZIP does not support timestamps before 1980
+     system "find", ".", "-type", "f", "-exec", "touch", "{}", "+"
+  
     virtualenv_install_with_resources
   end
 
