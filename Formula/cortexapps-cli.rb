@@ -39,10 +39,6 @@ class CortexappsCli < Formula
   end
 
   def install
-     # Fix for this error encountered during install
-     # ValueError: ZIP does not support timestamps before 1980
-     system "find", ".", "-type", "f", "-exec", "touch", "{}", "+"
-  
     virtualenv_install_with_resources
   end
 
@@ -61,11 +57,11 @@ class CortexappsCli < Formula
 
       Restart your terminal for the settings to take effect.
 
-      Run 'cortex -v' to verify.
+      Run 'cortex version' to verify.
     EOS
   end
 
   test do
-    assert_match "Cortex CLI #{version}", shell_output("#{bin}/cortex -v")
+    assert_match "#{version}", shell_output("#{bin}/cortex version")
   end
 end
