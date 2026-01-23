@@ -2,8 +2,8 @@ class CortexappsCli < Formula
   include Language::Python::Virtualenv
   desc     "Command-line Interface for Cortexapps"
   homepage "https://github.com/cortexapps/cli"
-  url "https://pypi.io/packages/source/c/cortexapps_cli/cortexapps_cli-1.9.0.tar.gz"
-  sha256  "a4b8e9d4e5fcd683192a4a6be420a9146116228215c77febecd9200345247e63"
+  url "https://pypi.io/packages/source/c/cortexapps_cli/cortexapps_cli-1.10.0.tar.gz"
+  sha256  "3c9e8e35f712b7bd5b69d3edffc3358a83ff1ee5ca6905e236138569f12b46c7"
   license "MIT"
 
   depends_on "python@3.11"
