@@ -5,6 +5,8 @@ class Engrams < Formula
   version "0.11.0"
   license "AGPL-3.0-only"
 
+  conflicts_with "engrams-nightly", because: "both install the engrams binary"
+
   on_macos do
     on_arm do
       url "https://github.com/cortexapps/engrams/releases/download/v0.11.0/engrams-darwin-arm64"
