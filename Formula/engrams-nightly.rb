@@ -2,26 +2,26 @@
 class EngramsNightly < Formula
   desc "CLI and terminal client for engrams sessions"
   homepage "https://github.com/cortexapps/engrams"
-  version "0.12.0-rc.7"
+  version "0.12.0-rc.8"
   license "AGPL-3.0-only"
 
   conflicts_with "engrams", because: "both install the engrams binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.7/engrams-darwin-arm64"
-      sha256 "e9ade7ecb2509a33e1c7940360554c36dff001bdbc758028bc617d916ddce4cb"
+      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.8/engrams-darwin-arm64"
+      sha256 "396e509112a4e11243ccffa5967f17fb764c8330f7653feeb47875adecc23533"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.7/engrams-linux-x64"
-      sha256 "88169c7ea03fd841362db6e9ab355e178cf8be54320a9fa3833b91d399c66fdc"
+      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.8/engrams-linux-x64"
+      sha256 "2cda61a805576d0b2c3fcbd503477d9d4f714a2b2e3764d21b68b823d5d8b629"
     end
     on_arm do
-      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.7/engrams-linux-arm64"
-      sha256 "7a3c382425ca8eaaf630df8a2a6d13580b44440b5d659986de7c4eefef591a68"
+      url "https://github.com/cortexapps/engrams/releases/download/v0.12.0-rc.8/engrams-linux-arm64"
+      sha256 "6a8d0ef511a8c6cf7d96bb8043573dbf49b986d8092d62059cddec5b5e285cb5"
     end
   end
 
